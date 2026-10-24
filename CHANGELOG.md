@@ -37,6 +37,7 @@ metadata and the backend fallback mirror it.
 
 ### Fixed
 
+- Cmd/Ctrl+Z in a Dub page field such as the glossary, translation notes or a segment's Start/End now undoes your typing there instead of the last transcript edit, and Cmd/Ctrl+S on a timeline segment no longer snaps it to the nearest onset (#3199)
 - A voice with no transcript now offers a one-click speech-to-text model install instead of only an error (#3269)
 - Saved voice and recent take rows show their hover actions on a solid background, so the buttons stay visible over long names (#3263)
 - Saved dub loads confirm before replacing unsaved work, recheck edits made during loading and stop when you leave the workspace (#3234)

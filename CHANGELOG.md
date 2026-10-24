@@ -37,6 +37,8 @@ metadata and the backend fallback mirror it.
 
 ### Fixed
 
+- Voice cloning references longer than 20 seconds are transcribed with the speech-to-text model you selected in Model Catalogue instead of dead-ending on a model the catalogue couldn't install, and that transcription model can now be unloaded on its own from the loaded-models panel without dropping the voice model ((#3176, #3183) — thanks @nirmalchatur!
+- Voice previews and cloning pass reference audio correctly to the selected speech recognizer, retain speech across silent windows, and safely unload bundled Whisper (#3183) — thanks @nirmalchatur!
 - A voice with no transcript now offers a one-click speech-to-text model install instead of only an error (#3269)
 - Saved voice and recent take rows show their hover actions on a solid background, so the buttons stay visible over long names (#3263)
 - Saved dub loads confirm before replacing unsaved work, recheck edits made during loading and stop when you leave the workspace (#3234)
